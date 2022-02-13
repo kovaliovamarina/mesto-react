@@ -1,0 +1,29 @@
+.elements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 282px);
+    gap: 20px 17px;
+    max-width: calc(100% - 200px * 2);
+    width: 100%;
+    margin-top: 51px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+@media (max-width: 1279px) {
+    .elements {
+        max-width: calc(100% - 100px * 2);
+    }
+}
+
+@media (max-width: 780px) {
+    .elements {
+        max-width: calc(100% - 50px * 2);
+    }
+}
+
+@media (max-width: 680px) {
+    .elements {
+        max-width: calc(100% - 19px * 2);
+        margin-top: 36px;
+    }
+}
