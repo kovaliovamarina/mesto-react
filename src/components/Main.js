@@ -1,7 +1,7 @@
 import React from 'react';
 import { url, token } from '../utils/constans';
 import Api from '../utils/Api';
-import Cards from './Cards';
+import Card from './Card';
 
 function Main(props) {
 
@@ -61,7 +61,7 @@ function Main(props) {
             <section className="elements page__container">
                 {cards.map((cardId) => {
                     return (
-                        <Cards key={cardId._id} card={cardId} onCardClick={props.onCardClick} onDeletePlace={props.onDeletePlace} />
+                        <Card key={cardId._id} card={cardId} onCardClick={props.onCardClick} onDeletePlace={props.onDeletePlace} />
                     )
                 })}
             </section>

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cards(props) {
+function Card(props) {
 
     function handleClick() {
         props.onCardClick(props.card);
@@ -20,4 +20,4 @@ function Cards(props) {
         </div>
     )
 }
-export default Cards;
+export default Card;
