@@ -8,7 +8,7 @@ function Card(props) {
     }
     return (
         <div className="element">
-            <img className="element__img " src={props.card.link} onClick={handleClick} />
+            <img className="element__img " src={props.card.link} onClick={handleClick} alt={props.card.name} />
             <button className="element__delete-button" aria-label="Удалить " type="button" onClick={props.onDeletePlace}></button >
             <div className="element__content ">
                 <h2 className="element__text ">{props.card.name}</h2>
